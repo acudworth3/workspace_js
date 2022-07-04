@@ -25,6 +25,20 @@ console.log(arr2);
 console.log(obj1);
 console.log('obj1', obj1)
 
+// -----------------more spread examples-----------------------
+const person = {
+  age: 20,
+  name: "ex1",
+  bool: true
+}
+console.log('person', person)
+
+// person_from_spread is an object with the properties that person has then change nameto spratty
+
+person_from_spread = {...person, name:"spready"}
+console.log('person_from_spread', person_from_spread)
+
+
 // destructuring objects
 var voxel = {x: 3.6, y: 7.4, z: 6.54 };
 
@@ -99,6 +113,7 @@ console.log('----------arbitrary_object-------------')
   //anonymous function
   // often used onclick
   // <button onClick={() => {console.log("this is a function")}}>I am a button</button>
+  // can be used inside of map
   () => {console.log("this is a function")};
     
 
