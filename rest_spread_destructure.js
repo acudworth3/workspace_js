@@ -1,3 +1,7 @@
+// Refernces
+// https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLtYhjdNoBXMOkMGlovXU8x_h9s-03KdvN&index=7
+// https://scrimba.com/playlist/p7v3gCd
+
 
 // rest operator
 const sum = (function() {
@@ -49,6 +53,7 @@ console.log('----------src-------------')
 console.log(source);
 
 //destructuring with function paramters
+// Useful with API calls.Allows for pulling outobject elements you want and ignoring everything else
 const stats = {
     max: 56.78,
     standard_deviation: 4.34,
