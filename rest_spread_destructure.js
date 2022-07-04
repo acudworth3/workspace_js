@@ -35,6 +35,9 @@ var voxel = {x: 3.6, y: 7.4, z: 6.54 };
 // NOTE does not throw an error if object property does not exist; sets it to null
 const { x : a, y : b, d : c } = voxel; // a = 3.6, b = 7.4, c = 6.54
 console.log([a,b,c])
+//Also possible
+const {x,y,z} = voxel;
+console.log([x,y,z])
 // Works with arrays as well by index only
 // can reroder an array inline
 
@@ -83,3 +86,30 @@ const stats = {
 console.log('----------arbitrary_object-------------')
   console.log(arbitrary_object); 
   console.log(half(arbitrary_object));   
+
+  // ---------------------------All the ways to define functions----------------------------------------
+  // Note that generally a component in react is a JavaScript function. often an anonymous one
+  
+  // fully defined
+  function named_function(input_val) {
+    console.log(input_val)
+  }
+  named_function('isnt this easier to read');
+  
+  //anonymous function
+  // often used onclick
+  // <button onClick={() => {console.log("this is a function")}}>I am a button</button>
+  () => {console.log("this is a function")};
+    
+
+  //no input; return jsx (whic mean html elements)
+  // You might want tocreate this type of functionto returntags that will be rendered on a page
+  const rafc = () => {
+    return (
+      // <div>rest_spread_destructure</div>
+      console.log('need react to use this fully')
+    )
+  }
+
+  
+  
