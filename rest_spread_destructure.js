@@ -34,6 +34,20 @@ console.log([a,b,c])
 // Works with arrays as well by index only
 // can reroder an array inline
 
+//destructuring arrays
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+    //Ignore the first two indices then spread the list variable into array variable
+  const [ , , ...arr] = list; 
+
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log('----------arr-------------')
+console.log(arr); 
+console.log('----------src-------------')
+console.log(source);
+
 //destructuring with function paramters
 const stats = {
     max: 56.78,
