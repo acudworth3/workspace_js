@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Refernces
 // https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLtYhjdNoBXMOkMGlovXU8x_h9s-03KdvN&index=7
 // https://scrimba.com/playlist/p7v3gCd

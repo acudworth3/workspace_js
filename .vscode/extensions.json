@@ -1,0 +1,19 @@
+{
+    "recommendations": [
+        "formulahendry.auto-rename-tag",
+        "aaron-bond.better-comments",
+        "mrmlnc.vscode-duplicate",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "mhutchie.git-graph",
+        "wix.vscode-import-cost",
+        "oderwat.indent-rainbow",
+        "visualstudioexptteam.vscodeintellicode",
+        "ritwickdey.liveserver",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "idansaban.turbo-console-debuglog",
+        "vscode-icons-team.vscode-icons",
+        "styled-components.vscode-styled-components"
+    ]
+}
