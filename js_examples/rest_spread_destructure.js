@@ -99,6 +99,7 @@ console.log(arbitrary_object);
 console.log(half(arbitrary_object));
 
 // ---------------------------All the ways to define functions----------------------------------------
+
 // Note that generally a component in react is a JavaScript function. often an anonymous one
 
 // fully defined
@@ -123,3 +124,58 @@ const rafc = () => {
     console.log('need react to use this fully')
   );
 };
+
+// ---------------------------Map----------------------------------------
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+/* Since map builds a new array, using it when you aren't using the returned array is an anti-pattern; use forEach or for...of instead.
+
+You shouldn't be using map if:
+
+you're not using the array it returns; and/or
+you're not returning a value from the callback. */
+
+// Map appears identical to a for loopwith some nice built-in elements explore mapping objects more
+const arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arr5 = ['a', 'b', 'a', 'b', 'a', 'b'];
+
+console.log('logging from map');
+arr4.map((arr4_element) => {
+  console.log(arr4_element);
+});
+
+console.log('map does not rewrite');
+arr4_mapped = arr4.map((arr4_element) => {
+  return 0;
+});
+console.log('arr4');
+console.log(arr4);
+console.log('assign to new  var to rewrite');
+console.log(arr4_mapped);
+
+TODO working iwth index and array
+arr5.map((element, index, array) => { 
+  // console.log("index:"+index)
+ })
+
+
+
+
+
+// ---------------------------Filter----------------------------------------
+// Note that filter only returns when true
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+const arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log('logging from filter');
+arr6.filter((arr4_element) => {
+  console.log(arr4_element);
+});
+
+console.log('filter does not rewrite');
+arr6_filtered = arr6.filter((arr6_element) => {
+  return arr6_element % 2 === 0;
+});
+console.log('arr6');
+console.log(arr4);
+console.log('assign to new  var to rewrite');
+console.log(arr6_filtered);
